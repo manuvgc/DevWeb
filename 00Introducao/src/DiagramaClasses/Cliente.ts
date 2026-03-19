@@ -1,3 +1,5 @@
+import Telefone = require("./Telefone");
+
 export default class Cliente{
     _nome: string;
     _cpf: string;
@@ -20,5 +22,53 @@ export default class Cliente{
         this._genero = genero;
         this._endereco = endereco;
         this._telefones = telefones;
+    }
+    
+    get nome(): string{
+        return this._nome;
+    }
+
+    get dataNascimento(): string{
+        return this._dataNascimento;
+    }
+
+    get cpf(): string{
+        return this._cpf;
+    }
+
+    get genero(): string{
+        return this._genero;
+    }
+
+    get endereco(): Endereco{
+        return this._endereco;
+    }
+
+    get telefones(): Telefone[]{
+        return this._telefones;
+    }
+
+    set nome(type: string) {
+        this._nome = type;
+    }
+
+    set cpf(type: string) {
+        this._cpf = type;
+    }
+
+    set dataNascimento(type: string) {
+        this._dataNascimento = type;
+    }
+
+    set genero(type: string) {
+        this._genero = type;
+    }
+
+    set endereco(type: Endereco) {
+        this._endereco = type;
+    }
+
+    set telefones(type: Telefone[]) {
+        this._telefones = type;
     }
 }

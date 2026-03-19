@@ -8,4 +8,28 @@ export default class Telefone{
         this._numero = numero;
         this._tipo = tipo;
     }
+
+    get ddd(): string {
+        return this._ddd;
+    }
+
+    set ddd(valor: string) {
+        this._ddd = valor;
+    }
+
+    get numero(): number {
+        return this._numero;
+    }
+
+    set numero(type: number) {
+        this._numero = type;
+    }
+
+    get tipo(): string {
+        return this._tipo;
+    }
+
+    set tipo(type: string) {
+        this._tipo = type;
+    }
 }

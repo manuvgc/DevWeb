@@ -8,4 +8,28 @@ export default class Produto{
         this._descricao = descricao;
         this._valor = valor;
     }
+
+    get codigo(): number{
+        return this._codigo;
+    }
+
+    get descricao(): string{
+        return this._descricao;
+    }
+
+    get valor(): number{
+        return this._valor;
+    }
+
+    set codigo(type: number) {
+        this._ddd = type;
+    }
+
+    set descricao(type: string) {
+        this._descricao = type;
+    }
+
+    set valor(type: number) {
+        this._valor = type;
+    }
 }
